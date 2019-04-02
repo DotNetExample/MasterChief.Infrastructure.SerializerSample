@@ -1,7 +1,7 @@
 # 序列化与序列化简单示例
 > 项目说明
 >
-> 1. 通过实现接口ISerializer可以扩展注入Json等序列化与反序列化操作；
+> 1. 通过实现接口ISerializer可以扩展其他方式序列化与反序列化；
 >
 > 2. 目前实现基于Newtonsoft.Json和ProtoBuf两种方式；
 >
@@ -9,7 +9,7 @@
 >
 > 4. Nuget：Install-Package MasterChief.DotNet.Infrastructure.Serialize  
 >
->    ​             Install-Package MasterChief.DotNet.Infrastructure.ProtobufSerializer
+>    ​                        Install-Package MasterChief.DotNet.Infrastructure.ProtobufSerializer
 >
 > 5. 欢迎Star，欢迎PR；
 >
