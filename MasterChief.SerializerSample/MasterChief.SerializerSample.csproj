@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A110C124-9BF7-4334-9684-8603E0666DB3}</ProjectGuid>
+    <ProjectGuid>{A5CC24C0-CDFF-4F75-80C9-D70406BB9DB5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MasterChief.DotNet.Infrastructure.SerializerSample</RootNamespace>
-    <AssemblyName>MasterChief.DotNet.Infrastructure.SerializerSample</AssemblyName>
+    <RootNamespace>MasterChief.SerializerSample</RootNamespace>
+    <AssemblyName>MasterChief.SerializerSample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -32,13 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="MasterChief.DotNet.Infrastructure.ProtobufSerializer, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MasterChief.DotNet.Infrastructure.ProtobufSerializer.1.0.0.2\lib\net45\MasterChief.DotNet.Infrastructure.ProtobufSerializer.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="MasterChief.DotNet.Infrastructure.Serialize, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MasterChief.DotNet.Infrastructure.Serialize.1.0.0.1\lib\net40\MasterChief.DotNet.Infrastructure.Serialize.dll</HintPath>
@@ -49,13 +44,26 @@
     <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
       <HintPath>..\packages\protobuf-net.2.4.0\lib\net40\protobuf-net.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
